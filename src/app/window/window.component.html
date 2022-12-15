@@ -1,0 +1,21 @@
+<p>window component works!</p>
+
+<form (ngSubmit)="onSubmit()" #sortNumberForm="ngForm" >
+    <fieldset class="form-group">
+        <label>Numbers to sort: </label>
+        <input type="numbers" #description="ngModel" [(ngModel)]="this.numbersToSort"
+        class="form-control" name="numbersToSort">
+    <!-- </fieldset>
+    <fieldset class="form-group"> -->
+        <br>
+        <label>Order to sort: </label>
+        <input type="text" #description="ngModel" [(ngModel)]="this.orderSort"
+        class="form-control" name="orderSort">
+    </fieldset>
+    <button type="submit" class="btn btn-success">Sorting</button>
+    <br>
+    <label>Received numbers: </label>
+        <input type="numbers" #description="ngModel" [(ngModel)]="this.receivedNumbers"
+        class="form-control" name="receivedNumbers" disabled="true">
+ </form>
+ 
